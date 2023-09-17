@@ -35,7 +35,7 @@
             border-radius: 5px;
         }
         button {
-            background-color: #3498db;
+            background-color: #4CAF50;
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -43,7 +43,7 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -75,7 +75,7 @@
             <label for="passedOutYear">Passed Out Year:</label>
             <input type="text" id="passedOutYear" name="passedOutYear" required>
 
-            <button type="submit">Register</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
@@ -89,3 +89,6 @@
     </script>
 </body>
 </html>
+
+     
+           
