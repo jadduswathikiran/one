@@ -1,95 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stylish Task List</title>
+    <title>Instagram-like Feed</title>
     <style>
         /* CSS styles go here */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #fafafa;
             margin: 0;
             padding: 0;
         }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-top: 20px;
-        }
-        #taskListContainer {
+        .post {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-        #taskInput {
-            width: 100%;
+        .post img {
+            max-width: 100%;
+        }
+        .post .caption {
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        #taskList {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 0;
-            border-bottom: 1px solid #ccc;
-        }
-        button {
-            background-color: #f44336;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #d32f2f;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Stylish Task List</h1>
-    <div id="taskListContainer">
-        <input type="text" id="taskInput" placeholder="Enter a task">
-        <button onclick="addTask()">Add Task</button>
-        <ul id="taskList">
-            <!-- Task items will be added here -->
-        </ul>
+    <div class="post">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+        <div class="caption">
+            <strong>Username:</strong> This is a sample caption for an Instagram-like post.
+        </div>
     </div>
 
+    <div class="post">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+        <div class="caption">
+            <strong>AnotherUser:</strong> Another sample caption.
+        </div>
+    </div>
+
+    <!-- More posts can be added here -->
+
     <script>
-        // JavaScript code goes here
-        function addTask() {
-            var taskInput = document.getElementById("taskInput");
-            var taskText = taskInput.value.trim();
-
-            if (taskText === "") {
-                alert("Please enter a task.");
-                return;
-            }
-
-            var taskList = document.getElementById("taskList");
-            var taskItem = document.createElement("li");
-            taskItem.textContent = taskText;
-
-            var deleteButton = document.createElement("button");
-            deleteButton.textContent = "Delete";
-            deleteButton.onclick = function() {
-                taskItem.remove();
-            };
-
-            taskItem.appendChild(deleteButton);
-            taskList.appendChild(taskItem);
-            taskInput.value = "";
-        }
+        // JavaScript code for interactions can go here
     </script>
 </body>
 </html>
+
+        
+           
 
             
